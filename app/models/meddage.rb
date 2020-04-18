@@ -1,0 +1,2 @@
+class Meddage < ApplicationRecord
+end
