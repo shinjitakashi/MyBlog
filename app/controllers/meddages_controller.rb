@@ -45,6 +45,7 @@ class MeddagesController < ApplicationController
         format.html { redirect_to @meddage, notice: 'Meddage was successfully updated.' }
         format.json { render :show, status: :ok, location: @meddage }
       else
+        byebug
         format.html { render :edit }
         format.json { render json: @meddage.errors, status: :unprocessable_entity }
       end
