@@ -69,6 +69,6 @@ class MeddagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def meddage_params
-      params.require(:meddage).permit(:title, :message)
+      params.require(:meddage).permit(:title, :message, :name)
     end
 end
