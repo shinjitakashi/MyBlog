@@ -8,6 +8,7 @@
       <th>Title</th>
       <th>Message</th>
       <th>Name</th>
+      <th>Money</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +19,7 @@
         <td><%= meddage.title %></td>
         <td><%= meddage.message %></td>
         <td><%= meddage.name %></td>
+        <td><%= meddage.money %></td>
         <td><%= link_to 'Show', meddage %></td>
         <td><%= link_to 'Edit', edit_meddage_path(meddage) %></td>
         <td><%= link_to 'Destroy', meddage, method: :delete, data: { confirm: 'Are you sure?' } %></td>

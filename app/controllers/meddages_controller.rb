@@ -45,7 +45,6 @@ class MeddagesController < ApplicationController
         format.html { redirect_to @meddage, notice: 'Meddage was successfully updated.' }
         format.json { render :show, status: :ok, location: @meddage }
       else
-        byebug
         format.html { render :edit }
         format.json { render json: @meddage.errors, status: :unprocessable_entity }
       end
@@ -70,6 +69,6 @@ class MeddagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def meddage_params
-      params.require(:meddage).permit(:title, :message, :name)
+      params.require(:meddage).permit(:title, :message, :name, :money)
     end
 end
